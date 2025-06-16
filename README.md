@@ -1,24 +1,24 @@
-# House Price Prediction
+# Predicción de Precios de Viviendas
 
-This project demonstrates a simple machine learning engineering workflow for predicting house prices using the California Housing dataset. The code is based on the notebook located in `notebooks/house_price_prediction.ipynb` and has been converted into reusable scripts.
+Este proyecto demuestra un flujo de trabajo sencillo de ingeniería de machine learning para predecir precios de viviendas usando el conjunto de datos *California Housing*. El código está basado en el notebook ubicado en `notebooks/house_price_prediction.ipynb`, y ha sido convertido en scripts reutilizables.
 
-## Project Structure
+## Estructura del Proyecto
 
 ```
 ├── data
-│   ├── raw            # Original downloaded dataset
-│   ├── processed      # Train/Test splits
-│   └── scores         # Evaluation metrics
-├── models             # Trained models
+│   ├── raw            # Conjunto de datos original descargado
+│   ├── processed      # División de Train/Test
+│   └── scores         # Métricas de evaluación
+├── models             # Modelos entrenados
 ├── notebooks          # Jupyter notebooks
-├── src                # Source code for the pipeline
-├── requirements.txt   # Python dependencies
-└── setup.py           # Makes project installable
+├── src                # Código fuente del pipeline
+├── requirements.txt   # Dependencias de Python
+└── setup.py           # Hace que el proyecto sea instalable
 ```
 
-## Setup
+## Configuración
 
-1. Create a virtual environment and install dependencies:
+1. Crea un entorno virtual e instala las dependencias:
 
 ```bash
 python -m venv venv
@@ -26,36 +26,41 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-2. Install the package in editable mode:
+2. Instala el paquete en modo editable:
 
 ```bash
 pip install -e .
 ```
 
-## Usage
+## Uso
 
-The entire process can be executed with the following commands:
-
-```bash
-python src/make_dataset.py       # Download and prepare data
-python src/train.py              # Train the model
-python src/evaluate.py           # Evaluate the model
-```
-
-To make predictions on new data:
+El proceso completo puede ejecutarse con los siguientes comandos:
 
 ```bash
-python src/predict.py --input path/to/data.csv --output predictions.csv
+python src/make_dataset.py       # Descarga y preparación de datos
+python src/train.py              # Entrena el modelo
+python src/evaluate.py           # Evalúa el modelo
 ```
 
-## Automation
-
-A `Makefile` is provided to automate the workflow:
+Para hacer predicciones sobre nuevos datos:
 
 ```bash
-make all     # runs data preparation, training and evaluation
+python src/predict.py --input ruta/a/datos.csv --output predicciones.csv
 ```
 
-## License
+## Automatización
 
-This project is licensed under the MIT License.
+Se proporciona un `Makefile` para automatizar el flujo de trabajo:
+
+```bash
+make all     # ejecuta preparación de datos, entrenamiento y evaluación
+```
+
+#Usuario
+
+Jeanpier Miguel Garay Pastrana
+Victor Alfonso Ochoa Flores
+Shalom Anderson López Melgar
+
+
+
